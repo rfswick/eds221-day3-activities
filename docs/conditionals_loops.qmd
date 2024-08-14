@@ -1,0 +1,94 @@
+---
+title: "Conditionals and Loops"
+author: "Rachel Swick"
+format: html
+---
+
+```{r}
+pm2_5 <- 148
+
+if (pm2_5 < 100){
+  print("Low to moderate risk")
+} else if (pm2_5 < 150 & pm2_5 >= 100){
+  print("Unhealthy for sensitive groups")
+} else if (pm2_5 >= 150){
+  print("Health risk present")
+}
+```
+
+```{r}
+species <- "blue whale"
+
+if (species == "blue whale"){
+  print("You found a whale")
+} 
+```
+
+```{r}
+base_burrito <- 6.50
+main_ingredient <- "steak"
+
+if (main_ingredient == "veggie"){
+  print(base_burrito)
+} else if (main_ingredient == "steak"){
+  print(base_burrito + 3.25)
+} else if (main_ingredient == "chicken"){
+  print(base_burrito + 3.00)
+}
+
+
+```
+
+```{r}
+fish <- c(8, 10, 12, 23)
+species <- c("goldfish", "tetras", "guppies", "mollies")
+
+for (i in seq_along(species)){
+  print(species_pro <- fish[i]/sum(fish) )
+}
+```
+
+```{r}
+for (i in seq_along(month.name)){
+  print(paste0(month.name[i], " is month ", i, "."))
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
