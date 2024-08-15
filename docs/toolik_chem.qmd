@@ -17,8 +17,8 @@ names(toolik_biochem)
 ```
 
 ```{r}
-inlet_biochem <- dplyr::select(.data = toolik_biochem, p_h, doc_u_m,
-                               tdn_u_m)
+inlet_biochem <- dplyr::select(.data = toolik_biochem, p_h, doc_u_m, tdn_u_m) |> 
+  dplyr::filter(.data = toolik_biochem, site == "Toolik Inlet" | site == "Toolik inlet")
 ```
 
 # Find the mean value of each column in `inlet_biochem` 3 different ways:
